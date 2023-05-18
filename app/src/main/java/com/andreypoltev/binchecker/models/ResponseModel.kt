@@ -7,11 +7,11 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ResponseModel(
-    val number: Number = Number(),
-    val scheme: String = "",
-    val type: String = "",
-    val brand: String = "",
-    val prepaid: Boolean = false,
-    val country: Country = Country(),
-    val bank: Bank = Bank()
+    val number: Number? = Number(),
+    val scheme: String? = "",
+    val type: String? = "",
+    val brand: String? = "",
+    val prepaid: String? = "",
+    val country: Country? = Country(),
+    val bank: Bank? = Bank()
 )
